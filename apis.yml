@@ -1,23 +1,85 @@
 aid: atolio
+
 name: Atolio
-description: 'Atolio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/66ad62d99d312335962805ce/66adc585116dfcb0fd9e5cd3_atolio-opengraph.png
+
+description: 'Atolio delivers an AI‑powered enterprise search platform that enables organizations to securely index and retrieve data across cloud and on‑premise sources. It offers self‑hosted deployment, sovereign data control, and integrations with tools like Atlassian, GitHub, Google Workspace, and Microsoft services, empowering teams in sales, support, engineering, and more to find critical information instantly.'
+
 url: https://raw.githubusercontent.com/api-evangelist/atolio/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- AI
+- Enterprise Search
+- Data Security
+- Integration
+- SaaS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Compliance
+  url: https://www.atolio.com/security
+- type: Hosts
+  url: hosts/atolio-hosts.yml
+- type: Vendors
+  url: vendors/atolio-vendors.yml
+- type: Security
+  url: https://www.atolio.com/security
+- type: Newsroom
+  url: https://www.atolio.com/news
+- type: GettingStarted
+  url: https://docs.atolio.com/configuration/sources/google/gmail/
+- type: GitHubOrganization
+  url: https://github.com/atolio
+- type: TrustCenter
+  url: security/atolio-trust-center.yml
+- type: DomainSecurity
+  url: security/atolio-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.atolio.com/
+
+- type: Documentation
+  url: https://docs.atolio.com/
+- type: Blog
+  url: https://www.atolio.com/blog
+- type: PrivacyPolicy
+  url: https://www.atolio.com/privacy
+- type: TermsOfService
+  url: https://www.atolio.com/msa
+- type: Support
+  url: https://www.atolio.com/contact
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: "Documentation is available at https://docs.atolio.com/ but no OpenAPI, GraphQL, AsyncAPI, or other machine‑readable contract was found."
+  evidence:
+    - url: https://docs.atolio.com/
+      status: 200
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
